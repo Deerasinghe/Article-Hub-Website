@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="logo.png"> <!-- Adjust file name and type -->
+  </head>
+
+  <body class="contact-page">
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about-container">
+      <section class="about-card">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="status-message"></p>
+    </section>
+    </main>
+
+    <main class="about-container">
+      <h2>Contact Us Through</h2>
+      <p>WhatsApp: <strong>+94 77 123 1234</strong></p>
+      <p>Facebook: <strong>Article Hub</strong></p>
+      <p>Email: <strong>articlehub@gmail.com</strong></p>
+  </main>
+
+    <footer>
+      <p style="color:rgb(255, 255, 255);">&copy; 2025 Article Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

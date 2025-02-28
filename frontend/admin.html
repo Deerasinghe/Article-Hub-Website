@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png"> <!-- Adjust file name and type -->
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html" class="active">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Scroll Buttons -->
+<div class="scroll-buttons">
+    <button onclick="scrollToSection('manage-articles')">Manage Articles</button>
+    <button onclick="scrollToSection('view-articles')">View Existing Articles</button>
+    <button onclick="scrollToSection('view-messages')">View Contact Messages</button>
+</div>
+
+<main>
+    <!-- Manage Articles Section -->
+    <section id="manage-articles" class="section">
+        <div class="card">
+            <h2 style="color:rgb(255, 255, 255);">Manage Articles</h2>
+            <form id="article-form">
+                <input type="hidden" id="article-id">
+                <input type="text" id="title" placeholder="Article Title" required>
+                <textarea id="content" placeholder="Article Content" required></textarea>
+                <input type="text" id="link" placeholder="Article Link" required>
+                <button type="submit" id="submit-btn">Add Article</button>
+                <button type="button" id="cancel-edit" class="cancel-btn" style="display: none;">Cancel</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- View Existing Articles Section -->
+    <section id="view-articles" class="section">
+        <div class="card">
+            <h2 style="color:rgb(255, 255, 255);">View Existing Articles</h2>
+            <div id="admin-articles">
+                <p>Loading articles...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Contact Messages Section -->
+    <section id="view-messages" class="section">
+        <div class="card">
+            <h2 style="color:rgb(255, 255, 255);">View Contact Messages</h2>
+            <div id="admin-messages">
+                <p>Loading messages...</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p style="color:rgb(255, 255, 255);">&copy; 2025 Article Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
